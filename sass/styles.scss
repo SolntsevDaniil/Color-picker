@@ -1,0 +1,68 @@
+/* ---------- Basic needs ---------- */
+
+@import 'reset';
+
+$font-family: "Roboto Slab", Arial, sans-serif;
+
+.wrapper {
+
+	// Font and font size adding
+	font-family: $font-family;
+	font-size: 62.5%;
+
+	// Alignment and stretching
+	margin: 0 auto;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.picker {
+
+	// Alignment to the center
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+
+	.label {
+
+		// Display block
+		display: block;
+
+		// Font and font propeties
+		font-size: 1.2em;
+		margin-top: .6em;
+		padding-left: 5px;
+	}
+}
+
+.rgb {
+
+	// Font and font properties
+	font-size: 3em;
+	font-weight: bold;
+	letter-spacing: 3px;
+
+	// Alignment
+	&-wrap {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin: -12em -50% 0 0;
+		transform: translate(-50%, -50%);
+	}
+}
+
+.hex {
+
+	// All styles extended from .rgb
+	&-wrap {
+		@extend .rgb-wrap;
+		margin-top: 12em;
+	}
+	@extend .rgb;
+}

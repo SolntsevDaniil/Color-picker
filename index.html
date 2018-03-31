@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<!-- Basic page needs
+	______________________________________-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Color picker</title>
+
+
+	<!-- Meta
+	______________________________________-->	
+	<meta name="description" content="From RGB to HEX and conversely">
+	<meta name="author" content="Solntsev Daniil - https://github.com/SolntsevDaniil">
+
+		<!-- Open Graph
+		______________________________________-->	
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://solntsevdaniil.github.io/index.html">
+		<meta property="og:title" content="Converter">
+		<meta property="og:image" content="css/img/256x256.png">
+		<meta property="og:description" content="From RGB to HEX and conversely">
+		<meta property="og:site_name" content="solntsevdaniil.github.io">
+		<meta property="og:locale" content="en_US">
+		<meta property="og:image:width" content="256">
+		<meta property="og:image:height" content="256">
+
+	<!-- Icons
+	______________________________________-->	
+	
+		<!-- Manifest.json
+		______________________________________-->
+		<link rel="manifest" href="js/scripts/manifest.json">
+
+		<!-- Common icons
+		______________________________________-->
+		<link rel="icon" type="image/png" href="css/img/favicon.ico" sizes="16x16">
+		<link rel="icon" type="image/png" href="css/img/32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="css/img/64x64.png" sizes="64x64">
+
+		<!-- Apple Touch Icon
+		______________________________________-->
+  		<link rel="shortcut icon" href="css/img/favicon.ico" type="image/x-icon">
+		<link rel="apple-touch-icon" href="css/img/apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="57x57" href="css/img/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="css/img/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="css/img/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="css/img/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="css/img/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="css/img/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="css/img/apple-touch-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="css/img/apple-touch-icon-180x180.png">
+
+		<!-- Apple Web App Meta
+		______________________________________-->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!-- Microsoft Tiles
+		______________________________________-->
+		<meta name="msapplication-config" content="js/scripts/browserconfig.xml">
+
+
+	<!-- FONT
+	______________________________________-->
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+
+
+	<!-- CSS
+	______________________________________-->
+	<link rel="stylesheet" href="css/styles.css">
+
+
+	<!-- JS
+	______________________________________-->
+	<script src="js/script.js"></script>
+
+
+</head>
+<body>
+<div class="wrapper">
+	
+	<div class="rgb-wrap">
+		<span class="rgb">255, 255, 255</span>
+	</div>
+
+	<div class="hex-wrap">
+		<span class="hex">#FFFFFF</span>
+	</div>
+
+	<div class="picker">
+		<span class="label">Red</span><input type="range" min="0" max="255" value="255" class="input">
+		<span class="label">Green</span><input type="range" min="0" max="255" value="255" class="input">
+		<span class="label">Blue</span><input type="range" min="0" max="255" value="255" class="input">
+	</div>
+
+</div>
+</body>
+</html>
